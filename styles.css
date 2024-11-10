@@ -1,0 +1,154 @@
+/* Estructura principal */
+body {
+    background-color: #28c067;
+    color: #5520b6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #2912fae5;
+    color: #ee0c1f;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Contenedor del perfil */
+.perfil-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* Espacio entre la imagen y el cuadro de información */
+    margin: 20px;
+}
+.informacion-perfil{
+    font-size: 1em;
+    color: #09091b;
+    align-self: flex-end;
+}
+.frase-doctora {
+    color: #ee1010;
+    font-family: cursive;
+}
+/* Imagen de perfil */
+.perfil-imagen {
+    flex-shrink: 0;
+}
+
+.foto-perfil {
+    width: 295px; /* Ajusta el tamaño de la imagen aquí */
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Caja de información del perfil */
+.perfil-informacion-caja {
+    border: 2px solid #FF4500; /* Cambia el color y grosor del borde */
+    padding: 10px; /* Espacio dentro de la caja */
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: #9c1111; /* Color de fondo de la caja */
+}
+
+/* Estilo del texto de información */
+.perfil-informacion {
+    color: #FF4500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.info-personal {
+    font-size: 1em;
+    color: #c0284e;
+}
+
+.info-personal p {
+    margin: 5px 0;
+}
+
+.info-personal strong {
+    color: #720772;
+}
+
+/* Título centrado con línea */
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #af1c97;
+    padding-bottom: 10px;
+    position: relative;
+    margin: 20px 0;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 55%; /* Ajusta el ancho de la línea */
+    height: 2px;
+    background-color: red;
+    margin: 5px auto 0;
+}
+
+
+
+/* Contenedor general */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #79074d2f;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Enlaces */
+a {
+    color: #440b8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    background-color: #00cc3d;
+    color: #9b0707;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a14304;
+}
+
+/* Medios responsivos */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .container {
+        padding: 10px;
+    }
+    .perfil-container h1 {
+        font-size: 1.5em;
+    }
+    .section h2 {
+        font-size: 1.4em;
+    }
+}
